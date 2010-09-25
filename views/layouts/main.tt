@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+	<title>SPORE</title>
+	<link href='http://fonts.googleapis.com/css?family=Josefin+Sans+Std+Light' rel='stylesheet' type='text/css'/>
+	<link rel="stylesheet" href="/css/main.css" type="text/css" media="screen" />
+	<script type="text/javascript" src="js/sod.js"></script>
+	<script type="text/javascript" src="js/anicon.js"></script>
+	<script>
+		var datas={
+			home:[
+				[[-7,-2,4],[-7,7,4],[7,7,4],[7,-2,4],[-7,-2,4],[0,-7,0],[7,-2,4]],
+				[[-7,-2,-4],[-7,7,-4],[7,7,-4],[7,-2,-4],[-7,-2,-4],[0,-7,0],[7,-2,-4]],
+				[[-7,7,4],[-7,7,-4]], [[-7,-2,4],[-7,-2,-4]],
+				[[7,7,4],[7,7,-4]], [[7,-2,4],[7,-2,-4]]
+			],
+			doc:[
+				[[5,6,4],[5,-6,4],[-5,-6,4],[-5,6,4],[5,6,4]],
+				[[5,6,0],[5,-6,0],[-5,-6,0],[-5,6,0],[5,6,0]],
+				[[5,6,-4],[5,-6,-4],[-5,-6,-4],[-5,6,-4],[5,6,-4]]
+			],
+			dl:[
+				[[-7,0,4],[7,0,4],[0,7,0],[-7,0,4]],
+				[[-7,0,-4],[7,0,-4],[0,7,0],[-7,0,-4]],
+				[[-7,0,4],[-7,0,-4]], [[7,0,4],[7,0,-4]],
+				[[0,-7,0],[0,0,0]]
+			]
+		};
+		var init=function(){
+			SoD('O','#668');
+			new anicon({id:"iconhome",idanim:"menuhome",bg:"#668",lines:datas.home,pers:false});
+			new anicon({id:"icondoc",idanim:"menudoc",bg:"#668",lines:datas.doc,pers:false});
+			new anicon({id:"icondl",idanim:"menudl",bg:"#668",lines:datas.dl,pers:false});
+		};
+	</script>
+</head>
+<body onload="init()">
+
+<div id="header">
+	<div id="menu">
+		<ul>
+			<li id="menuhome">HOME<canvas id="iconhome" width="20" height="20"></canvas></li>
+			<li id="menudoc">DOCS<canvas id="icondoc" width="20" height="20"></canvas></li>
+			<li id="menudl">DOWNLOAD<canvas id="icondl" width="20" height="20"></canvas></li>
+		</ul>
+	</div>
+	<div id="title">
+		<h1>S P<canvas id="O" width="40" height="50"></canvas>R E</h1>
+		<h3>Specification to a POrtable Rest Environment</h3>
+	</div>
+</div>
+
+<div id="content">
+<% content %>
+</div>
+
+<footer>powered by <a href="http://perldancer.org/">Dancer</a></footer>
+
+</body>
+</html>

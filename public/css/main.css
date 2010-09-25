@@ -1,0 +1,85 @@
+/* main css
+ * niko 2010
+ */
+
+body, ul, li, form, h1, h2, h3 {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font: bold 14pt "Josefin Sans Std Light","Arial","Helvetica";
+	color: #000;
+	background-color: #fff;
+	padding: 2px;
+}
+
+li {
+	list-style-type: none;
+	padding: 5px 5px 0 5px;
+	cursor: pointer;
+}
+
+pre {
+	font-family: "lucida console","monaco","andale mono","bitstream vera sans mono","consolas","monospace";
+}
+
+footer {
+	font: normal 7pt "Tahoma","Arial","Helvetica";
+}
+
+#header {
+	color: #fff;
+	height: 82px;
+	background-color: #668;
+	background: -moz-linear-gradient(0deg,#668,#668,#fff);
+	background: -webkit-gradient(linear, 0% 0%, 100% 0%, from(#668), to(#fff), color-stop(50%,#668));
+	padding: 0;
+	border-bottom: 2px solid #fff;
+}
+
+#title {
+	float: left;
+	text-align: left;
+	border-left: 2px solid #fff;
+	padding-left: 10px;
+}
+
+#menu {
+	float: left;
+	text-align: right;
+	padding: 2px 2px 0 2px;
+}
+
+#menu li {
+	line-height: 18px;
+}
+
+#menu li:hover {
+	background-color: #fff;
+	color: #445;
+}
+
+#header h1 {
+	font: bold 36pt "Arial","Helvetica";
+	text-shadow: #000 5px 5px 2px;
+}
+
+#header h3 {
+	font: bold 16pt "Josefin Sans Std Light","Arial","Helvetica";
+	margin-bottom: 5px;
+}
+
+#O {
+	margin: 0 5px;
+	display: inline;
+	vertical-align: bottom;
+	background: #000;
+}
+
+#iconhome,#icondoc,#icondl {
+	background: #000;
+	display: inline;
+	vertical-align: -3px;
+	margin-left: 5px;
+}
